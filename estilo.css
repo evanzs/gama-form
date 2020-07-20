@@ -1,0 +1,78 @@
+ 
+ /******************************* [Corpo da Pagina] **********************************/
+
+
+ /*divide o corpo da pagina em um grid de 3 partes 
+ HEADER - CABEÇALHO
+ CONTENT -CONTEUDO 
+ FOOTER - RODAPÉ*/
+ .conteiner
+ {
+ display: grid;
+  
+  height: 100%;
+  text-align: center;
+  grid-template-rows: 15% 70% 15%;
+ 
+   grid-template-areas: "header header"
+  						"content content"
+  						"footer footer"
+
+ }
+
+
+/*estilo do cabeçalho */
+ .header{
+
+  grid-area: header;  
+  
+}
+
+.content{
+  grid-area: content;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
+}
+.footer{
+  grid-area: footer;
+ 
+ 
+}
+
+/******************************************************************************************/
+
+
+/******************************** [OUTROS COMPONENTES] ***********************************/
+
+/* estilo do botão */
+.btn
+{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: transparent;
+  color: #007bff;
+  border-color: #007bff;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  padding: 0.7% 0.7%;
+  font-size: 1rem;
+   border: 1px solid ;
+
+}
+.btn:hover {
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff;
+  border-color: #007bff;
+
+  
+}
+
+/*text area*/
+.text-area
+{
+	border-radius: 0.25rem;
+	border: 1px solid ;
+}
+/******************************************************************************************/

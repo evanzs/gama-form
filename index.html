@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Formuláro </title>
+
+		  <!----------------------------------- [SCRIPT] ----------------------------->
+		  <script type="text/javascript" src = "decode.js" > </script>
+
+
+		  <!--------------------------------- [Estilo CSS] ---------------------------->
+		  <link rel="stylesheet" type="text/css" href="estilo.css">
+
+	</head>
+	<body>
+
+    <!---------------------------------------------- [CORPO] -------------------------------->
+		<div class ="conteiner"> 
+		    <!------------------------------------  [HEADER] --___--------------------------->
+			<div class="header"> 
+		      <h2> Decodificando Base64 </h2> 
+			</div>
+
+            <!------------------------------------- [CONTENT] ------------------------------->
+			<div class="content">
+				<form>
+
+					
+					<div class ="linha">
+						<label for="input-text">Insira seu texto em base64:<br></label>
+						<textarea id="input-text" name="input-text" rows="20" cols="40"
+						lass="text-area" riquered autofocus>ex:RGVjb2RpZmljYW5kbyBlbSBiYXNlNjQ=						
+						</textarea>	
+					</div>	
+							
+					<div class ="linha">
+						 <button type="button" id="btn-codificar" name="btn-codificar" 
+						 class="btn" onclick ="ToBase64()">Decodificar</button> 
+					</div>	
+			   </form>
+			</div>
+			<!------------------------------------- [FOOTER] ------------------------------>
+			<div class="footer">
+				<p>Evandro Fernandes </p>
+			</div>
+
+		</div>
+    <!------------------------------------------------------------------------------------>
+	</body> 
+
+</html>
+
+
